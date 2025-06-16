@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Upload, Edit, Trash2, Download, Eye, Plus, BarChart3, BookOpen, Users, FileText } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://provi-2.onrender.com/api';
 
 function App() {
   const [currentView, setCurrentView] = useState('user');
