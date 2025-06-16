@@ -9,8 +9,8 @@ import PuraSet from "./PuraSet"
 import Ch  from "./Ch"
 import Typ from "./Typ"
 import Main1q from './Main1q'
+import An from "./A"
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -19,7 +19,8 @@ function App() {
     {/* <PuraSet/> */}
     {/* <Typ/>  */}
     {/* <Ch/> */}
-    <Main1q/>
+    <An/>
+    {/* <Main1q/> */}
     </>
   )
 }

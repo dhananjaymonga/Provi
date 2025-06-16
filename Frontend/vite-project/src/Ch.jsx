@@ -200,6 +200,7 @@ function App() {
   const handlePdfSelect = (pdf) => {
     setSelectedPdf(pdf);
     window.open(pdf.filepath, '_blank');
+    window.open(pdf.filepath, '_blank');
   };
 
   const downloadPDF = async (url, filename) => {
@@ -262,8 +263,10 @@ function App() {
         <h1>📚 PDF Admin Panel</h1>
         <p>Manage your PDF database with advanced controls</p>
       </header>
-
-      {/* Statistics Dashboard */}
+<a href="https://res.cloudinary.com/dvn9wwxhl/raw/upload/v1749383417/pdfs/b5yieslt9c3crukxhzfc.pdf" download>
+  Download PDF
+</a>
+   {/* Statistics Dashboard */}
       <div className="stats-section" style={{ marginBottom: '2rem', padding: '1rem', border: '1px solid #ddd', borderRadius: '8px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
           <h2>📊 Dashboard Statistics</h2>
@@ -290,6 +293,7 @@ function App() {
               {Object.entries(stats.subjectCounts).slice(0, 3).map(([subject, count]) => (
                 <p key={subject} style={{ margin: '0.25rem 0' }}>{subject}: {count}</p>
               ))}
+
             </div>
             <div style={{ padding: '1rem', background: '#d1ecf1', borderRadius: '8px' }}>
               <h3 style={{ margin: '0 0 0.5rem 0', color: '#0c5460' }}>Classes</h3>
